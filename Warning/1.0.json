@@ -1,0 +1,25 @@
+{
+    "？ColorSheetName": "要检测的颜色变化格子所在表名",
+    "ColorSheetName": "Sheet2",
+    "？ColorRow": "监测颜色变化所在行（若合并以左上角为准）",
+    "ColorRow": 5,
+    "？ColorColumn": "监测颜色变化所在列（若合并以左上角为准）",
+    "ColorColumn": 2,
+    "？Delay": "监测延时，单位秒",
+    "Delay": 20,
+    "？receivers": "收件人列表，最后一个人不用加逗号，加逗号为英语逗号",
+    "receivers": [
+        "502337328@qq.com",
+        "a502337328@163.com"
+    ],
+    "？mail": "以下为邮件内容",
+    "SendSubject": "监测到颜色发生变化",
+    "SendContext": "这里是发送内容",
+    "SendHeaderSender": "邮件提醒",
+    "SendHeaderReceiver": "收件人",
+    "？smtp服务器配置": "不会的话可以不用修改",
+    "mail_host": "smtp.163.com",
+    "mail_user": "a502337328@163.com",
+    "mail_pass": "VVSRGCETMIATYQEN",
+    "sender": "a502337328@163.com"
+}
