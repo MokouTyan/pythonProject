@@ -1,0 +1,12 @@
+{
+    "？url": "【可修改】用于查找的网页",
+    "url": "http://www.lswz.gov.cn/html/ywpd/lstk/tj-sgsj.shtml",
+    "？search": "【可修改】要查找的公告内容",
+    "search": "玉米",
+    "？notice_title_href_xpath": "【不修改】获取每个公告href的Xpath位置",
+    "notice_title_href_xpath": "//*[@class='lists diylist']/li/a/@href",
+    "？notice_title_xpath": "【不修改】获取每个公告title的Xpath位置",
+    "notice_title_xpath": "//div[@class='pub-det-title']/text()",
+    "？notice_content_xpath": "【不修改】获取每个公告content的Xpath位置",
+    "notice_content_xpath": "//*[contains(text(),'替换') and @style]/text()"
+}
