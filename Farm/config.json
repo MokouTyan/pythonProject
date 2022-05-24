@@ -1,6 +1,6 @@
 {
     "？url": "【可修改】用于查找的网页",
-    "url": "http://www.cffex.com.cn/jystz/",
+    "url": "http://www.dce.com.cn/dalianshangpin/ywfw/jystz/ywtz/13305-2.html",
     "？search": "【可修改】要查找的公告内容",
     "search": "玉米",
     "？notice_pages": "【可修改】爬取公告的页数的上限，默认100页",
@@ -16,7 +16,7 @@
     "notice_content_xpath": "//*[contains(text(),'替换') and @style]/text()",
     "？2": "——————【分割线，以下只允许程序员调试】——————",
     "？next_page_keywords": "调用selenium时候获取下一页href的关键词",
-    "next_page_keywords": "//*[contains(text(),'下一页') or contains(text(),'下页') or contains(text(),'>')]",
+    "next_page_keywords": "//*[contains(text(),'下一页') or contains(text(),'下页')]",
     "？delay": "延迟，防止反爬虫",
     "delay": 1,
     "？notice_list_number": "防止置顶帖子引起公告列表xpath混乱，默认采用第二个公告作为采集xpath链接",

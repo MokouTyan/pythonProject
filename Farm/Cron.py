@@ -160,7 +160,7 @@ def get_all_notice_url_list(notice_pages_list):
             notice_url = urljoin(notice_page, result)
             notice_list.append(notice_url)
             # print("网址： ", notice_url)
-            # 获取文本标题
+            # # 获取文本标题
             # notice_html = requests.get(notice_url)
             # notice_html.encoding = "utf-8"
             # notice_selector = etree.HTML(notice_html.text)
@@ -213,6 +213,21 @@ def handle_suffix_of_content_xpath(pre_xpath):
     print("处理后的通用xpath为\n", after_xpath)
     return after_xpath
 
+def get_notice(url_list, notice_content_xpath):
+    for url in url_list:
+        print("网址： ", url)
+        # 获取文本标题
+        notice_html = requests.get(url)
+        notice_html.encoding = "utf-8"
+        notice_selector = etree.HTML(notice_html.text)
+        notice_title_name_xpath = """/html/head/title/text()"""
+        notice_title_name = notice_selector.xpath(notice_title_name_xpath)
+        print("标题: ", notice_title_name[0])
+        notice_content = notice_selector.xpath(notice_content_xpath)[0].xpath("string(.)")
+        print("正文：\n", "".join([s for s in notice_content.splitlines(True) if s.strip()]))
+
+
+
 if __name__ == '__main__':
     # 【动态】自适应获取通知列表的标题，思路是根据ul的字数最多数量判断
     title = get_notice_page_title(base_url)
@@ -225,13 +240,13 @@ if __name__ == '__main__':
     # 【静态】将取得的通用xpath去获取所有的链接
     all_notice_list = get_all_notice_url_list(notice_pages_list)
     # 【动态】自适应获取公告的内容位置，思路是找到字数最多的p
-    # notice_content_location = get_notice_content_location(all_notice_list)
     notice_content_location = get_notice_content_location(all_notice_list)
     # 【静态】将上面函数获取的内容去获取页面的内容xpath
     notice_content_location_xpath = get_xpath(notice_content_location, all_notice_list[0], "p")
     # 将取得的单项xpath处理成上级div目录
     after_content_xpath = handle_suffix_of_content_xpath(notice_content_location_xpath)
-
+    # 【静态】将取得的通用xpath转化为内容
+    get_notice(all_notice_list, after_content_xpath)
     # current_html = requests.get(current_url)
     # current_html.encoding = "utf-8"
     # selector = etree.HTML(current_html.text)
