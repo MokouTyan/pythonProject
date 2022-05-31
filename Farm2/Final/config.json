@@ -3,14 +3,20 @@
     "？search": "要搜索的值",
     "search": "CANOLA",
     "？re_get_urls": "是否重新获取url文件，默认0不获取，直接读取本地文档，不使用爬取，也可以手动添加",
-    "re_get_url": 1,
-    "？countrys": "左边那一列的单词，不带符号，比如N. ATLANTIC就是N ATLANTIC，不要使用ATLANTIC，会和S ATLANTIC错乱。最后一项没有英文逗号。",
+    "re_get_url": 0,
+    "？countrys": "左边那一列的单词，不带逗号和点号，比如N. ATLANTIC就改为N ATLANTIC，不要使用ATLANTIC，会和S ATLANTIC一起算。最后一项没有英文逗号。",
     "countrys": [
         "CHINA",
         "TAIWAN",
         "COLOMBIA",
         "EGYPT",
-        "MEXICO"
+        "MEXICO",
+        "COSTA RICA",
+        "KOREA REP",
+        "HONG KONG",
+        "FRENCH POLY",
+        "JAPAN",
+        "PHILIPPINES"
     ],
     "？1": "==========【分割线，以下请看清规则后使用】==========",
     "？keyword1": "表格的第一个关键词，不要有连续的多个空格，不分割的话两个英文引号就行",
