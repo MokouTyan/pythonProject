@@ -1,7 +1,7 @@
 {
     "？": "【编辑器网址，用于修改和验证：www.sojson.com/editor.html】",
     "？mode": "mode=0时，重新获取链接；mode=1时，自定义搜索；mode=2时，玉米相加；mode=1或2时，读取mode=0生成的url.json文件",
-    "mode": 2,
+    "mode": 1,
     "？search": "要搜索的值，需要mode=1",
     "search": "WHITE",
     "？countrys": "左边那一列的单词，不带逗号和点号，比如N. ATLANTIC就改为N ATLANTIC，不要使用ATLANTIC，会和S ATLANTIC一起算。最后一项没有英文逗号。",
