@@ -1,0 +1,27 @@
+{
+    "？": "【编辑器网址，用于修改和验证：www.sojson.com/editor.html】",
+    "？mysql_host": "mysql地址",
+    "mysql_host": "192.168.141.14",
+    "？mysql_user": "mysql账号",
+    "mysql_user": "root",
+    "？mysql_password": "mysql密码",
+    "mysql_password": "123456",
+    "？mysql_port": "mysql端口",
+    "mysql_port": 3306,
+    "？mysql_database": "mysql数据库名",
+    "mysql_database": "Data",
+    "？oracle_user": "oracle账号",
+    "oracle_user": "blues",
+    "？oracle_password": "oracle密码",
+    "oracle_password": "blues",
+    "？oracle_host": "oracle地址+端口+服务名",
+    "oracle_host": "192.168.141.13:1521/itfdatapool.itfdatapool",
+    "？mysql_tables": "mysql的表名们",
+    "mysql_tables": [
+        "SQ_DAILYRANK_ALL"
+    ],
+    "？oracle_tables": "oracle的表名们",
+    "oracle_tables": [
+        "SQ_DAILYRANK_ALL"
+    ]
+}

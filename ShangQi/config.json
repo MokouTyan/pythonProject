@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
     "？": "【编辑器网址，用于修改和验证：www.sojson.com/editor.html】",
     "？mode": "mode=0时，重新获取链接；mode=1时，自定义搜索；mode=2时，玉米相加；mode=1或2时，读取mode=0生成的url.json文件",
     "mode": 2,
@@ -12,4 +13,8 @@
         "MEXICO"
     ],
     "base_url": "http://www.shfe.com.cn/data/dailydata/kx/pm20220620.dat"
+=======
+    "base_url": "http://www.shfe.com.cn/data/dailydata/kx/pm",
+    "begin_date": "2022-5-29"
+>>>>>>> 64b7dfd32a61eeff373df2940cc0cfd393ec0cab
 }

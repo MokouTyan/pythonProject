@@ -1,19 +1,23 @@
 import time
 import datetime
 import json
+from datetime import date, timedelta
 
-# a = datetime.datetime.now()
-# b = a.strftime("%Y%m%d")
-# c = a + datetime.timedelta(days=4)
-# d = c.strftime("%Y%m%d")
-# e = '2013/10/10'
-# f = datetime.datetime.strptime(e, '%Y/%m/%d')
-# print(a)
-# print(b)
-# print(c)
-# print(d)
-# print(e)
-# print(f)
+yesterday = (date.today() + timedelta(days=-1)).strftime("%Y-%m-%d")
+print('正在获取昨日数据', yesterday, '的数据')
+print()
+a = datetime.datetime.now()
+b = a.strftime("%Y%m%d")
+c = a + datetime.timedelta(days=4)
+d = c.strftime("%Y%m%d")
+e = '2013/10/10'
+f = datetime.datetime.strptime(e, '%Y/%m/%d')
+print(a)
+print(b)
+print(c)
+print(d)
+print(e)
+print(f)
 
 with open('config.json', 'r', encoding='utf-8') as f:
     JsonFile = json.load(f)
